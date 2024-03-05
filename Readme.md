@@ -6,7 +6,7 @@ DRY (Don't Repeat Yourself): Utilizar o Django REST Framework para reduzir a rep
 Segurança: Utilizar o sistema de autenticação e permissões do Django ou Django REST Framework para controlar o acesso às endpoints.
 Manutenção de código: Seguir a PEP 8 para estilo de código Python, e usar comentários e documentação adequados.
 Tratamento de exceções: Melhorar o tratamento de exceções para cobrir casos específicos e retornar mensagens de erro claras.
-Testes: Escrever testes unitários e de integração para garantir a qualidade e funcionamento da aplicação.
+
 
 #### Configuração do Ambiente
 

@@ -49,8 +49,7 @@ Testando a API
 Você pode testar a API usando ferramentas como Postman ou cURL. Abaixo estão alguns exemplos de como interagir com a API:
 
 - Criar um novo cliente:
-
-curl -X POST -H "Content-Type: application/json" -d '
+http://localhost:8000/api/clientes
 ````
 {
     "nome": "Emerson Amorim Dev 81",
@@ -59,15 +58,13 @@ curl -X POST -H "Content-Type: application/json" -d '
     "telefone": "11987654321"
 }
 ````
-' http://127.0.0.1:8000/cliente/create/
 
 - Listar todos os clientes:
 
-curl -X GET http://127.0.0.1:8000/clientes/
+http://127.0.0.1:8000/clientes/
 
 Atualizar um cliente:
-
-curl -X PUT -H "Content-Type: application/json" -d '
+http://localhost:8000/api/clientes/1
 ````
 {
     "nome": "Emerson Amorim Dev 81",
@@ -76,11 +73,10 @@ curl -X PUT -H "Content-Type: application/json" -d '
     "telefone": "11987654321"
 }
 ````
-' http://127.0.0.1:8000/cliente/update/<id>/
 
 - Deletar um cliente:
+http://localhost:8000/api/clientes/1
 
-curl -X DELETE http://127.0.0.1:8000/cliente/delete/<id>/
 Documentação Adicional
 
 #### Conclusão

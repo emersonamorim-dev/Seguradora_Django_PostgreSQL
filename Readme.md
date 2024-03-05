@@ -51,12 +51,14 @@ Você pode testar a API usando ferramentas como Postman ou cURL. Abaixo estão a
 - Criar um novo cliente:
 
 curl -X POST -H "Content-Type: application/json" -d '
+````
 {
     "nome": "Emerson Amorim Dev 81",
     "cpf": "12345678901",
     "email": "emerson_tecno@example.com",
     "telefone": "11987654321"
 }
+````
 ' http://127.0.0.1:8000/cliente/create/
 
 - Listar todos os clientes:
@@ -66,12 +68,14 @@ curl -X GET http://127.0.0.1:8000/clientes/
 Atualizar um cliente:
 
 curl -X PUT -H "Content-Type: application/json" -d '
+````
 {
     "nome": "Emerson Amorim Dev 81",
     "cpf": "12345678901",
     "email": "emerson_tecno@example.com",
     "telefone": "11987654321"
 }
+````
 ' http://127.0.0.1:8000/cliente/update/<id>/
 
 - Deletar um cliente:
